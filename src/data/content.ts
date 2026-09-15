@@ -10,12 +10,11 @@ export const profile = {
     role: "AI Engineer · GenAI · Agentic AI · AI Architecture",
     positioning:
         "I design and ship production-grade AI systems — LLM applications, RAG & GraphRAG, agentic orchestration, and the infrastructure that keeps them reliable at scale.",
-    headline:
-        "Production AI systems — from retrieval pipelines to real-time multimodal agents.",
+    headline: "Production AI systems — from retrieval pipelines to real-time multimodal agents.",
     summary:
         "I architect and ship end-to-end AI products: RAG & GraphRAG, multi-agent workflows, long-context reasoning, model serving, and edge vision — backed by the evaluation, observability, and backend engineering to run in production, not just in a demo.",
     location: "Chennai, India",
-    email: "demomail.ofc@gmail.com",
+    email: "rahulrajasekar210203@gmail.com",
     github: "",
     linkedin: "https://www.linkedin.com/in/rahul-r-999595205",
     /** Profile photo — put image in `public/` folder, e.g. "/profile.jpg" */

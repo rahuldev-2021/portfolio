@@ -1,6 +1,5 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { profile } from "@/data/content";
-import { IdentityOrbit } from "@/components/IdentityOrbit";
 import {
   IconArrowRight,
   IconLinkedin,
@@ -29,89 +28,91 @@ export function Hero() {
       />
 
       <div className="container-x flex min-h-[calc(100svh-4rem)] items-center py-8 lg:py-10">
-        <div className="grid w-full items-center gap-10 lg:grid-cols-2 lg:gap-12">
-          {/* Left */}
-          <div>
-            <motion.h1
-              initial={reduce ? false : { opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.55, delay: 0.05 }}
-              className="mt-6 text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-[3.25rem]"
-            >
-              Hi, I&apos;m{" "}
-              <span style={{ color: "var(--accent-bright)" }}>{profile.name}</span>
-            </motion.h1>
-
-            <motion.p
-              initial={reduce ? false : { opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.55, delay: 0.08 }}
-              className="mt-3 text-base font-medium sm:text-lg"
-              style={{ color: "var(--fg-muted)" }}
-            >
-              {profile.role.replace(/ · /g, " | ")}
-            </motion.p>
-
-            <motion.p
-              initial={reduce ? false : { opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.55, delay: 0.11 }}
-              className="mt-5 max-w-lg text-sm leading-relaxed sm:text-[15px]"
-              style={{ color: "var(--fg-muted)" }}
-            >
-              {profile.heroIntro.map((line, i) => (
-                <span key={i}>
-                  {line}
-                  {i < profile.heroIntro.length - 1 && <br />}
-                </span>
-              ))}
-            </motion.p>
-
-            <motion.div
-              initial={reduce ? false : { opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.55, delay: 0.14 }}
-              className="mt-8 flex flex-wrap gap-3"
-            >
-              <a href="#projects" className="btn-primary">
-                View My Projects
-                <IconArrowRight className="h-4 w-4" />
-              </a>
-              <a href="#contact" className="btn-outline">
-                Contact Me
-              </a>
-            </motion.div>
-
-            <motion.div
-              initial={reduce ? false : { opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.55, delay: 0.18 }}
-              className="mt-8 flex flex-wrap items-center gap-5"
-            >
-              {socials.map((s) => (
-                <a
-                  key={s.label}
-                  href={s.href}
-                  target={s.external ? "_blank" : undefined}
-                  rel={s.external ? "noreferrer" : undefined}
-                  className="group flex items-center gap-2 text-sm transition-colors hover:text-[var(--accent-bright)]"
-                  style={{ color: "var(--fg-muted)" }}
-                >
-                  <s.icon className="h-4 w-4" />
-                  {s.label}
-                </a>
-              ))}
-            </motion.div>
-          </div>
-
-          {/* Right — identity orbit: the engineer at the center of the system */}
-          <motion.div
-            initial={reduce ? false : { opacity: 0, scale: 0.96 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="card glow-box overflow-hidden p-4 sm:p-6"
+        <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
+          {/* Eyebrow */}
+          <motion.span
+            initial={reduce ? false : { opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.02 }}
+            className="text-xs font-semibold uppercase tracking-[0.22em]"
+            style={{ color: "var(--accent-bright)" }}
           >
-            <IdentityOrbit />
+            AI Engineer
+          </motion.span>
+
+          {/* Name */}
+          <motion.h1
+            initial={reduce ? false : { opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.55, delay: 0.08 }}
+            className="mt-5 text-4xl font-bold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl"
+          >
+            Hi, I&apos;m {profile.name}
+          </motion.h1>
+
+          {/* Role */}
+          <motion.p
+            initial={reduce ? false : { opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.55, delay: 0.14 }}
+            className="mt-4 text-base font-medium sm:text-lg"
+            style={{ color: "var(--fg-muted)" }}
+          >
+            {profile.role.replace(/ · /g, "  ·  ")}
+          </motion.p>
+
+          {/* Intro */}
+          <motion.p
+            initial={reduce ? false : { opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.55, delay: 0.2 }}
+            className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed sm:text-base"
+            style={{ color: "var(--fg-muted)" }}
+          >
+            {profile.heroIntro.map((line, i) => (
+              <span key={i}>
+                {line}
+                {i < profile.heroIntro.length - 1 && <br />}
+              </span>
+            ))}
+          </motion.p>
+
+          {/* CTAs */}
+          <motion.div
+            initial={reduce ? false : { opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.55, delay: 0.26 }}
+            className="mt-9 flex flex-wrap items-center justify-center gap-3"
+          >
+            <a href="#projects" className="btn-primary">
+              View My Projects
+              <IconArrowRight className="h-4 w-4" />
+            </a>
+            <a href="#contact" className="btn-outline">
+              Contact Me
+            </a>
+          </motion.div>
+
+          {/* Socials */}
+          <motion.div
+            initial={reduce ? false : { opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.55, delay: 0.32 }}
+            className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-3"
+          >
+            {socials.map((s) => (
+              <a
+                key={s.label}
+                href={s.href}
+                target={s.external ? "_blank" : undefined}
+                rel={s.external ? "noreferrer" : undefined}
+                className="group inline-flex items-center gap-2 text-sm transition-colors hover:text-[var(--accent-bright)]"
+                style={{ color: "var(--fg-muted)" }}
+              >
+                <s.icon className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5" />
+                {s.label}
+              </a>
+            ))}
           </motion.div>
         </div>
       </div>

@@ -30,6 +30,8 @@
   --primary-glow: rgba(37, 99, 235, 0.25);
   --grid-line: rgba(0, 0, 0, 0.04);
   --glow: rgba(37, 99, 235, 0.1);
+  --bg-orb-a: rgba(37, 99, 235, 0.16);
+  --bg-orb-b: rgba(16, 185, 129, 0.14);
 
   /* Legacy aliases — kept so existing components keep working */
   --bg: var(--base);
@@ -74,6 +76,8 @@
   --primary-glow: rgba(91, 155, 248, 0.18);
   --grid-line: rgba(255, 255, 255, 0.04);
   --glow: rgba(91, 155, 248, 0.07);
+  --bg-orb-a: rgba(91, 155, 248, 0.14);
+  --bg-orb-b: rgba(52, 211, 153, 0.1);
 
   /* Legacy aliases */
   --bg: var(--base);
@@ -299,6 +303,46 @@
     background-size: 40px 40px;
   }
 
+  /* Animated ambient background — theme-aware via --bg-orb-* tokens */
+  .bg-aurora {
+    position: fixed;
+    inset: 0;
+    z-index: -10;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .bg-aurora::before,
+  .bg-aurora::after {
+    content: "";
+    position: absolute;
+    width: 55vmax;
+    height: 55vmax;
+    border-radius: 9999px;
+    filter: blur(70px);
+    opacity: 0.7;
+    will-change: transform;
+  }
+  .bg-aurora::before {
+    top: -18vmax;
+    left: -12vmax;
+    background: radial-gradient(
+      closest-side,
+      var(--bg-orb-a),
+      transparent 70%
+    );
+    animation: aurora-a 26s ease-in-out infinite alternate;
+  }
+  .bg-aurora::after {
+    bottom: -20vmax;
+    right: -14vmax;
+    background: radial-gradient(
+      closest-side,
+      var(--bg-orb-b),
+      transparent 70%
+    );
+    animation: aurora-b 32s ease-in-out infinite alternate;
+  }
+
   .glow-box {
     box-shadow: 0 0 40px -8px var(--accent-glow);
   }
@@ -309,6 +353,30 @@
   .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
+  }
+}
+
+@keyframes aurora-a {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(12vmax, 8vmax, 0) scale(1.15);
+  }
+  100% {
+    transform: translate3d(-6vmax, 14vmax, 0) scale(0.95);
+  }
+}
+
+@keyframes aurora-b {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-10vmax, -8vmax, 0) scale(1.1);
+  }
+  100% {
+    transform: translate3d(8vmax, -12vmax, 0) scale(1.2);
   }
 }
 

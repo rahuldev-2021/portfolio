@@ -7,7 +7,7 @@
 export const profile = {
     name: "Rahul R",
     firstName: "Rahul R",
-    role: "AI Engineer · GenAI · Agentic AI · AI Architecture",
+    role: "AI Engineer · GenAI · Agentic AI",
     positioning:
         "I design and ship production-grade AI systems — LLM applications, RAG & GraphRAG, agentic orchestration, and the infrastructure that keeps them reliable at scale.",
     headline: "Production AI systems — from retrieval pipelines to real-time multimodal agents.",
@@ -19,7 +19,7 @@ export const profile = {
     linkedin: "https://www.linkedin.com/in/rahul-r-999595205",
     /** Profile photo — put image in `public/` folder, e.g. "/profile.jpg" */
     photo: "/profile.jpg",
-    availability: "Available for opportunities",
+    availability: "",
     heroIntro: [
         "I architect and engineer intelligent, production-grade AI systems that move beyond prototypes and deliver real-world value. My work spans LLM applications, RAG architectures, agentic systems, production inference, and real-time multimodal AI — with a focus on building solutions that are scalable, reliable, observable, and ready for production.",
     ],

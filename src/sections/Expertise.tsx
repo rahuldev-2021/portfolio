@@ -9,7 +9,7 @@ export function Expertise() {
         <SectionHeader
           number="05"
           title="Expertise"
-          subtitle="Technical capabilities grouped by domain — only technologies evidenced across shipped projects."
+          subtitle="Technical capabilities grouped by domain."
         />
 
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

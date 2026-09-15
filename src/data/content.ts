@@ -54,7 +54,7 @@ export const expertiseDomains = [
 export const aboutTraits = [
     {
         title: "Systems Thinking",
-        body: "Design AI solutions around data, workflows, constraints, and system-level trade-offs — not models alone.",
+        body: "Design AI solutions around data, workflows, constraints and system-level trade-offs — not models alone.",
         icon: "workflow",
     },
     {

@@ -5,7 +5,7 @@ export function Footer() {
   const year = new Date().getFullYear();
   const socials = [
     { icon: IconLinkedin, href: profile.linkedin, label: "LinkedIn" },
-    { icon: IconMail, href: `mailto:${profile.email}`, label: "Email" },
+    { icon: IconMail, href: `https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}`, label: "Email" },
   ].filter((s) => s.href);
 
   return (
@@ -37,8 +37,8 @@ export function Footer() {
               <a
                 key={s.label}
                 href={s.href}
-                target={s.label === "Email" ? undefined : "_blank"}
-                rel={s.label === "Email" ? undefined : "noreferrer"}
+                target="_blank"
+                rel="noreferrer"
                 className="grid h-8 w-8 place-items-center rounded-lg border transition-colors hover:border-[var(--accent)] hover:text-[var(--accent-bright)]"
                 style={{ borderColor: "var(--border)", color: "var(--fg-muted)" }}
                 aria-label={s.label}

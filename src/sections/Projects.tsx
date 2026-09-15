@@ -26,7 +26,7 @@ export function Projects() {
     <section id="projects" className="section">
       <div className="container-x">
         <SectionHeader
-          number="02"
+          number="04"
           title="Featured Projects"
           subtitle="Real solutions. Practical AI — technical case studies with architecture, pipelines, and engineering decisions."
         />

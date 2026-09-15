@@ -65,7 +65,9 @@ export function Navbar({ theme, onToggleTheme }: NavbarProps) {
           </button>
 
           <a
-            href={`mailto:${profile.email}`}
+            href={`https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}`}
+            target="_blank"
+            rel="noreferrer"
             className="btn-outline hidden !px-3 !py-2 sm:inline-flex"
             aria-label="Email"
           >

@@ -2,42 +2,92 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Reference template — deep navy + electric blue */
+/* Design system — clean, minimal, bright (ChatGPT-inspired) */
 :root {
-  --bg: #f4f6fa;
-  --bg-elev: #ffffff;
-  --fg: #0f172a;
-  --fg-muted: #475569;
-  --fg-subtle: #94a3b8;
-  --border: rgba(15, 23, 42, 0.08);
-  --border-strong: rgba(15, 23, 42, 0.14);
-  --card: #ffffff;
-  --accent: #2563eb;
-  --accent-bright: #3b82f6;
-  --accent-soft: rgba(37, 99, 235, 0.08);
-  --accent-glow: rgba(59, 130, 246, 0.35);
-  --teal: #10b981;
-  --grid-line: rgba(15, 23, 42, 0.04);
-  --glow: rgba(37, 99, 235, 0.12);
+  /* Semantic tokens (light) */
+  --base: #ffffff; /* Background */
+  --sidebar: #f9f9f9; /* Sidebar */
+  --surface: #ffffff; /* Surfaces / cards */
+  --surface-raised: #f7f7f8; /* Raised layers */
+  --text: #0d0d0d; /* Primary text */
+  --text-muted: #676767; /* Muted text */
+  --text-faint: #8e8e8e; /* Faint text */
+  --ink: #0d0d0d; /* Accent — dark buttons/chips */
+  --ink-contrast: #ffffff; /* Text on ink */
+  --primary: #2563eb; /* Links / actions */
+  --primary-hover: #1d4ed8;
+  --brand: #10b981; /* Brand emerald */
+  --brand-hover: #059669;
+  --border: rgba(0, 0, 0, 0.1);
+  --border-strong: rgba(0, 0, 0, 0.16);
+  --success: #10a37f;
+  --warning: #eaa800;
+  --error: #ef4444;
+  --shadow: rgba(0, 0, 0, 0.08);
+
+  /* Derived tints */
+  --primary-soft: rgba(37, 99, 235, 0.08);
+  --primary-glow: rgba(37, 99, 235, 0.25);
+  --grid-line: rgba(0, 0, 0, 0.04);
+  --glow: rgba(37, 99, 235, 0.1);
+
+  /* Legacy aliases — kept so existing components keep working */
+  --bg: var(--base);
+  --bg-elev: var(--surface-raised);
+  --fg: var(--text);
+  --fg-muted: var(--text-muted);
+  --fg-subtle: var(--text-faint);
+  --card: var(--surface);
+  --accent: var(--primary);
+  --accent-bright: var(--primary);
+  --accent-soft: var(--primary-soft);
+  --accent-glow: var(--primary-glow);
+  --teal: var(--brand);
+
   color-scheme: light;
 }
 
 .dark {
-  --bg: #050810;
-  --bg-elev: #0a0f1a;
-  --fg: #f1f5f9;
-  --fg-muted: #94a3b8;
-  --fg-subtle: #64748b;
-  --border: rgba(148, 163, 184, 0.12);
-  --border-strong: rgba(148, 163, 184, 0.2);
-  --card: #0d1220;
-  --accent: #3b82f6;
-  --accent-bright: #60a5fa;
-  --accent-soft: rgba(59, 130, 246, 0.1);
-  --accent-glow: rgba(59, 130, 246, 0.45);
-  --teal: #34d399;
-  --grid-line: rgba(148, 163, 184, 0.06);
-  --glow: rgba(59, 130, 246, 0.18);
+  /* Semantic tokens (dark) — refined, low-glow, mirrors the light theme */
+  --base: #1a1b1e; /* Background */
+  --sidebar: #151619; /* Sidebar */
+  --surface: #1f2024; /* Surfaces / cards */
+  --surface-raised: #26272c; /* Raised layers / bubbles */
+  --text: #f4f4f5; /* Primary text */
+  --text-muted: #a1a1aa; /* Muted text */
+  --text-faint: #71717a; /* Faint text */
+  --ink: #f4f4f5; /* Accent — light buttons/chips */
+  --ink-contrast: #18181b; /* Text on ink */
+  --primary: #5b9bf8; /* Links / actions */
+  --primary-hover: #3b82f6;
+  --brand: #34d399; /* Brand emerald */
+  --brand-hover: #10b981;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
+  --success: #10a37f;
+  --warning: #eaa800;
+  --error: #ef4444;
+  --shadow: rgba(0, 0, 0, 0.4);
+
+  /* Derived tints — glow toned way down for a clean, minimal feel */
+  --primary-soft: rgba(91, 155, 248, 0.1);
+  --primary-glow: rgba(91, 155, 248, 0.18);
+  --grid-line: rgba(255, 255, 255, 0.04);
+  --glow: rgba(91, 155, 248, 0.07);
+
+  /* Legacy aliases */
+  --bg: var(--base);
+  --bg-elev: var(--surface-raised);
+  --fg: var(--text);
+  --fg-muted: var(--text-muted);
+  --fg-subtle: var(--text-faint);
+  --card: var(--surface);
+  --accent: var(--primary);
+  --accent-bright: var(--primary);
+  --accent-soft: var(--primary-soft);
+  --accent-glow: var(--primary-glow);
+  --teal: var(--brand);
+
   color-scheme: dark;
 }
 
@@ -121,13 +171,14 @@
   }
 
   .btn-primary {
-    @apply btn text-white;
-    background: linear-gradient(180deg, var(--accent-bright), var(--accent));
-    box-shadow: 0 0 20px -4px var(--accent-glow);
+    @apply btn;
+    background: var(--ink);
+    color: var(--ink-contrast);
+    box-shadow: 0 1px 2px var(--shadow);
   }
   .btn-primary:hover {
     transform: translateY(-1px);
-    box-shadow: 0 0 28px -2px var(--accent-glow);
+    box-shadow: 0 4px 14px -4px var(--shadow);
   }
 
   .btn-outline {

@@ -7,7 +7,7 @@ export function Expertise() {
     <section id="expertise" className="section">
       <div className="container-x">
         <SectionHeader
-          number="03"
+          number="05"
           title="Expertise"
           subtitle="Technical capabilities grouped by domain — only technologies evidenced across shipped projects."
         />
@@ -16,7 +16,7 @@ export function Expertise() {
           {skillGroups.map((group) => (
             <div
               key={group.label}
-              className="card p-4 transition-colors hover:border-[var(--accent)]"
+              className="card p-4"
             >
               <div className="mb-2.5 flex items-center gap-2">
                 <span

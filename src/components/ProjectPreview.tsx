@@ -61,24 +61,6 @@ export function ProjectPreview({ project }: { project: Project }) {
     );
   }
 
-  if (slug === "model-deployments") {
-    return (
-      <div className="flex h-full flex-col justify-center gap-2 p-4" style={{ background: "#0a0f1a" }}>
-        {["vLLM", "Ollama", "NIM"].map((b) => (
-          <div key={b} className="flex items-center gap-2 rounded border px-2 py-1.5" style={{ borderColor: "var(--border)" }}>
-            <div className="h-2 w-2 rounded-full bg-[var(--teal)]" />
-            <span className="text-[10px] font-medium" style={{ color: "var(--fg-muted)" }}>
-              {b}
-            </span>
-            <span className="ml-auto text-[9px]" style={{ color: "var(--fg-subtle)" }}>
-              /api/{b.toLowerCase()}/*
-            </span>
-          </div>
-        ))}
-      </div>
-    );
-  }
-
   // Default abstract preview
   return (
     <div

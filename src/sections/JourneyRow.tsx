@@ -17,7 +17,7 @@ export function JourneyRow() {
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-10">
           {/* Experience */}
           <div id="experience" className="scroll-mt-20">
-            <ColumnHeader number="04" title="Experience" />
+            <ColumnHeader number="02" title="Experience" />
             <div className="space-y-6">
               {experience.map((item) => (
                 <div key={item.company}>
@@ -75,26 +75,13 @@ export function JourneyRow() {
 
           {/* Certifications */}
           <div id="certifications" className="scroll-mt-20">
-            <ColumnHeader number="05" title="Certifications" />
+            <ColumnHeader number="03" title="Certifications" />
             <div className="space-y-3">
               {certifications.map((cert) => (
                 <article
                   key={cert.title}
-                  className="group card relative overflow-hidden p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--accent)]"
+                  className="card relative overflow-hidden p-4"
                 >
-                  {/* Accent edge that lights up on hover */}
-                  <span
-                    className="absolute inset-y-0 left-0 w-[3px] origin-top scale-y-0 transition-transform duration-300 group-hover:scale-y-100"
-                    style={{ background: "linear-gradient(180deg, var(--accent-bright), var(--teal))" }}
-                    aria-hidden
-                  />
-                  {/* Soft corner glow */}
-                  <span
-                    className="pointer-events-none absolute -right-10 -top-10 h-24 w-24 rounded-full opacity-0 blur-2xl transition-opacity duration-300 group-hover:opacity-100"
-                    style={{ background: "var(--glow)" }}
-                    aria-hidden
-                  />
-
                   <div className="relative flex items-start gap-3.5">
                     <span
                       className="grid h-10 w-10 shrink-0 place-items-center rounded-xl text-[var(--accent-bright)] ring-1 ring-inset ring-[var(--border-strong)]"

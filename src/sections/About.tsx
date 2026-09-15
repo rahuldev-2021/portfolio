@@ -34,7 +34,7 @@ export function About() {
               {aboutTraits.map((trait) => (
                 <div
                   key={trait.title}
-                  className="card p-4 transition-colors hover:border-[var(--accent)]"
+                  className="card p-4"
                 >
                   <span
                     className="grid h-8 w-8 place-items-center rounded-lg text-[var(--accent-bright)]"

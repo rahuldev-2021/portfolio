@@ -2,13 +2,13 @@ import { useCallback, useEffect, useState } from "react";
 
 export type Theme = "light" | "dark";
 
-const STORAGE_KEY = "portfolio-theme";
+const STORAGE_KEY = "vectorless-rag:theme";
 
 function getInitialTheme(): Theme {
-  if (typeof window === "undefined") return "dark";
+  if (typeof window === "undefined") return "light";
   const stored = window.localStorage.getItem(STORAGE_KEY) as Theme | null;
   if (stored === "light" || stored === "dark") return stored;
-  return "dark";
+  return "light";
 }
 
 export function useTheme() {

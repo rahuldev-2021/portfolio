@@ -6,36 +6,38 @@
 
 export const profile = {
     name: "Rahul R",
-    firstName: "Rahul",
-    role: "AI Engineer · GenAI Developer · Agentic AI Developer · AI Architect",
+    firstName: "Rahul R",
+    role: "AI Engineer · GenAI · Agentic AI · AI Architecture",
     positioning:
-        "Building intelligent systems with LLMs, RAG, agentic orchestration, and production AI architecture.",
-    headline: "Production AI systems — from retrieval pipelines to real-time multimodal agents.",
+        "I design and ship production-grade AI systems — LLM applications, RAG & GraphRAG, agentic orchestration, and the infrastructure that keeps them reliable at scale.",
+    headline:
+        "Production AI systems — from retrieval pipelines to real-time multimodal agents.",
     summary:
-        "I architect and ship end-to-end AI products: RAG & GraphRAG, multi-agent workflows, long-context reasoning, model serving, and edge vision — with the backend, evaluation, and observability to run in production.",
+        "I architect and ship end-to-end AI products: RAG & GraphRAG, multi-agent workflows, long-context reasoning, model serving, and edge vision — backed by the evaluation, observability, and backend engineering to run in production, not just in a demo.",
     location: "Chennai, India",
     email: "demomail.ofc@gmail.com",
     github: "",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/rahul-r-999595205",
     /** Profile photo — put image in `public/` folder, e.g. "/profile.jpg" */
     photo: "/profile.jpg",
     availability: "Available for opportunities",
-    heroIntro:
-        "I build intelligent systems with LLMs, RAG, and modern AI architecture — from retrieval pipelines and agentic workflows to production inference and real-time multimodal AI.",
+    heroIntro: [
+        "I architect and engineer intelligent, production-grade AI systems that move beyond prototypes and deliver real-world value. My work spans LLM applications, RAG architectures, agentic systems, production inference, and real-time multimodal AI — with a focus on building solutions that are scalable, reliable, observable, and ready for production.",
+    ],
 };
 
 export const about = {
-    headline: "Turning Ideas into Intelligent Systems",
-    who: "I'm an AI engineer who owns the full stack of intelligent systems — retrieval design, LLM orchestration, agent tooling, APIs, and the interfaces that make them usable.",
+    headline: "From AI Concepts to Production-Ready Systems",
+    who: "I engineer end-to-end AI systems that turn complex problems into intelligent, reliable, and production-ready solutions. I work across the entire AI application stack—from retrieval architecture and LLM orchestration to agentic workflows, tool integration, APIs, model serving, and user-facing experiences. My focus is not just on building AI prototypes, but on engineering systems that are scalable, observable, maintainable, and ready for real-world use.",
     overlayText: "AI, Engineered",
     philosophy:
-        "Start with the problem and data flow, not the model. Route queries to the right strategy, measure quality before scaling, and design for observability, failure modes, and cost from day one.",
+        "Start with the problem and the data flow, not the model. Route each query to the right strategy, measure quality before scaling, and design for observability, failure modes, and cost from day one.",
     specialize:
-        "LLM application engineering, RAG & GraphRAG, agentic systems (LangGraph + MCP), real-time voice/vision AI, model serving (vLLM / Ollama / NIM), and developer tooling with code ingestion & automated review.",
+        "My expertise spans RAG and GraphRAG, agentic AI with LangGraph and MCP, real-time voice and vision AI, production inference with vLLM, Ollama, and NVIDIA NIM, and AI-powered developer tooling for code understanding, automated analysis, and intelligent code review.",
     build: "Document intelligence platforms, telecom agent workflows, industrial training assistants, video annotation pipelines, inference gateways, and edge-AI vision systems.",
     interests:
         "Production GenAI, retrieval architecture, evaluation harnesses, and systems where AI is embedded in real operational workflows — not isolated demos.",
-    story: "My work progressed from RAG pipelines and chat systems into multi-agent orchestration, graph-augmented retrieval, recursive reasoning engines, and real-time multimodal assistants — always grounded in what ships reliably.",
+    story: "My work has progressed from RAG pipelines and chat systems into multi-agent orchestration, graph-augmented retrieval, recursive reasoning engines, and real-time multimodal assistants — always grounded in what ships reliably.",
 };
 
 export const expertiseDomains = [
@@ -51,18 +53,18 @@ export const expertiseDomains = [
 
 export const aboutTraits = [
     {
-        title: "Pipeline Mindset",
-        body: "Design the data flow first. Pick the model second.",
+        title: "Systems Thinking",
+        body: "Design AI solutions around data, workflows, constraints, and system-level trade-offs — not models alone.",
         icon: "workflow",
     },
     {
-        title: "Beyond the Demo",
-        body: "RAG, agents, inference — built to ship, not to impress in a slide deck.",
+        title: "Production-Grade AI",
+        body: "Engineer for accuracy, reliability, latency, scalability, observability, and measurable performance.",
         icon: "sparkles",
     },
     {
-        title: "Own the Stack",
-        body: "Retrieval → orchestration → API → eval. End-to-end. ",
+        title: "Full-Stack AI Ownership",
+        body: "From retrieval and reasoning to agents, inference, APIs, evaluation, and deployment — end to end.",
         icon: "server",
     },
 ];
@@ -70,10 +72,10 @@ export const aboutTraits = [
 export const nav = [
     { label: "Home", href: "#top" },
     { label: "About", href: "#about" },
-    { label: "Projects", href: "#projects" },
-    { label: "Expertise", href: "#expertise" },
     { label: "Experience", href: "#experience" },
     { label: "Certifications", href: "#certifications" },
+    { label: "Projects", href: "#projects" },
+    { label: "Expertise", href: "#expertise" },
     { label: "Contact", href: "#contact" },
 ];
 
@@ -83,17 +85,17 @@ export const nav = [
 export const focusAreas = [
     {
         title: "Agentic Systems",
-        body: "Multi-agent orchestration with LangGraph — routing, tool use via MCP, checkpointing, and human-escalation paths for real operational workflows.",
+        body: "Multi-agent orchestration with LangGraph — intent routing, tool use via MCP, checkpointing, and human-escalation paths built for real operational workflows, not toy demos.",
         icon: "workflow",
     },
     {
         title: "RAG & GraphRAG",
-        body: "Retrieval pipelines over vector stores (ChromaDB, Weaviate) and knowledge graphs (Neo4j, NetworkX) with NER-based entity linking and sequential context.",
+        body: "Retrieval pipelines over vector stores (ChromaDB, Weaviate) and knowledge graphs (Neo4j, NetworkX), combining NER-based entity linking with sequential context for grounded answers.",
         icon: "graph",
     },
     {
         title: "Long-Context Reasoning",
-        body: "Recursive Language Model (RLM) engines — a Root-LLM + sandboxed REPL + Sub-LLM loop that reasons over very large documents without stuffing the prompt.",
+        body: "Recursive Language Model (RLM) engines — a Root-LLM + sandboxed REPL + Sub-LLM loop that reasons over very large documents without stuffing everything into one prompt.",
         icon: "brain",
     },
     {
@@ -103,12 +105,12 @@ export const focusAreas = [
     },
     {
         title: "Production Engineering",
-        body: "FastAPI services, async I/O, Redis/MongoDB persistence, JWT auth, encrypted secrets, Docker, and observability with Langfuse.",
+        body: "FastAPI services with async I/O, Redis/MongoDB persistence, JWT auth, encrypted secrets, Docker, and end-to-end observability with Langfuse.",
         icon: "server",
     },
     {
         title: "Model Serving & Deployment",
-        body: "Self-hosted LLM inference with vLLM, Ollama, and NVIDIA NIM — unified FastAPI gateways, streaming SSE chat, and backend switching for throughput vs. multimodal use.",
+        body: "Self-hosted LLM inference with vLLM, Ollama, and NVIDIA NIM — unified FastAPI gateways, streaming SSE chat, and config-driven backend switching for throughput vs. multimodal workloads.",
         icon: "cloud",
     },
 ];
@@ -224,11 +226,6 @@ export const skillGroups: SkillGroup[] = [
 // ---------------------------------------------------------------------------
 //  Projects — the centerpiece. Featured = shown large at the top.
 // ---------------------------------------------------------------------------
-export type EngineeringDecision = {
-    title: string;
-    rationale: string;
-};
-
 export type ProjectChallenge = {
     challenge: string;
     solution: string;
@@ -240,11 +237,6 @@ export type Project = {
     tagline: string;
     description: string;
     problem: string;
-    architecture?: string;
-    architectureDiagram?: string;
-    aiPipeline?: string;
-    dataFlow?: string;
-    engineeringDecisions?: EngineeringDecision[];
     challenges?: ProjectChallenge[];
     evaluation?: string;
     highlights?: string[];
@@ -266,63 +258,27 @@ export const projects: Project[] = [
         slug: "lucius-ai",
         order: 1,
         title: "Lucius AI — Document Intelligence",
-        tagline: "Document library, chat & deep analysis with RLM",
+        tagline: "Document library, chat & deep analysis powered by a custom RLM engine",
         description:
-            "A FastAPI + React product for working with large document libraries. It combines PageIndex-based retrieval with a custom Recursive Language Model (RLM) engine for deep analysis, plus a general chat mode — all with an evaluation harness and admin tooling.",
+            "A FastAPI + React product for working with large document libraries. Lucius combines PageIndex-based, structure-aware retrieval with a custom Recursive Language Model (RLM) engine for deep analysis, alongside a general chat mode — all wrapped in an offline evaluation harness and admin tooling so quality is measurable, not assumed.",
         problem:
-            "Answering questions over large documents is limited by context windows and cost. Lucius routes queries to the right strategy and uses iterative, code-driven reasoning for deep analysis instead of one-shot prompting.",
-        architecture:
-            "React frontend → FastAPI API layer → query router (General / PageIndex / RLM) → MongoDB for docs & auth → LiteLLM for model calls → Ragas evaluation harness for offline quality checks.",
-        architectureDiagram: `User Query
-     ↓
-Query Router (General | PageIndex | Deep/RLM)
-     ↓
-PageIndex Structure API ──→ Context Assembly
-     ↓
-RLM Engine (Root LLM + REPL + Sub-LLM)
-     ↓
-LiteLLM → LLM Provider
-     ↓
-Response + Citations
-     ↓
-Ragas Offline Eval (golden set)`,
-        aiPipeline:
-            "Documents ingested via PageIndex → structure-aware retrieval for standard mode → RLM iterative reasoning for deep analysis → LiteLLM routes to configured provider → responses evaluated offline with Ragas golden sets.",
-        dataFlow:
-            "PDF/library upload → MongoDB metadata → PageIndex indexing → user query hits router → retrieved context + optional RLM sandbox execution → streamed markdown/PDF response to React UI.",
-        engineeringDecisions: [
-            {
-                title: "Three query modes instead of one prompt",
-                rationale:
-                    "Simple questions don't need RLM cost; deep analysis needs iterative code-driven reasoning. Routing by intent keeps latency and spend proportional to task complexity.",
-            },
-            {
-                title: "PageIndex over naive chunking",
-                rationale:
-                    "Document structure (sections, pages) improves grounding for library-scale corpora versus flat vector chunks alone.",
-            },
-            {
-                title: "Ragas golden-set evaluation",
-                rationale:
-                    "Offline eval with admin tooling makes RAG/RLM quality measurable before production changes — not guesswork after deploy.",
-            },
-        ],
+            "Answering questions over large document libraries is constrained by context windows and cost. Stuffing a whole document into one prompt is expensive, lossy, and brittle. Lucius routes each query to the strategy that fits it and uses iterative, code-driven reasoning for deep analysis instead of one-shot prompting.",
         challenges: [
             {
                 challenge: "Context window limits on large document libraries",
                 solution:
-                    "RLM engine delegates sub-queries to a sandboxed REPL + Sub-LLM loop instead of stuffing entire documents into one prompt.",
+                    "The RLM engine delegates sub-queries to a sandboxed REPL + Sub-LLM loop instead of stuffing entire documents into one prompt.",
             },
             {
                 challenge: "PII in uploaded documents",
                 solution:
-                    "LLM-Guard anonymization layer before model calls, plus Argon2 auth and encrypted secrets in the API layer.",
+                    "An LLM-Guard anonymization layer runs before model calls, backed by Argon2 auth and encrypted secrets in the API layer.",
             },
         ],
         evaluation:
-            "Ragas-based offline evaluation with a golden-set admin panel for regression testing across query modes.",
+            "Ragas-based offline evaluation with a golden-set admin panel for regression testing across all query modes.",
         highlights: [
-            "Query routing by complexity",
+            "Intent-based query routing",
             "Custom RLM reasoning engine",
             "Structure-aware PageIndex retrieval",
             "Offline Ragas evaluation harness",
@@ -343,42 +299,13 @@ Ragas Offline Eval (golden set)`,
     },
     {
         slug: "graphrag-trace",
-        order: 2,
+        order: 5,
         title: "GraphRAG & Agent Trace Graph",
         tagline: "Knowledge graphs for documents and agent conversations",
         description:
             "A graph-based intelligence layer that unifies two pipelines: a RAG + GraphRAG system that turns PDFs and media into a hybrid knowledge graph (vector chunks linked by sequential and NER-based entity edges), and an agent-trace graph that ingests AI conversations into Neo4j as connected Human / AI / Tool nodes for forward and backward tracing.",
         problem:
-            "Pure vector RAG loses document structure and entity relationships, and multi-turn agent runs are hard to debug from flat logs. Modeling both as graphs improves retrieval grounding and makes any message traceable through tool calls and decisions.",
-        architectureDiagram: `PDF / Media Ingest
-     ↓
-Chunk + Embed → ChromaDB
-     ↓
-NetworkX Graph (sequential + NER edges)
-     ↓
-Hybrid GraphRAG Retrieval
-     ↓
-LLM Response
-
-Agent Conversation
-     ↓
-Neo4j Trace Graph (Human / AI / Tool)
-     ↓
-Forward / Backward Trace Queries`,
-        aiPipeline:
-            "Documents chunked and embedded → graph edges from sequence and NER co-occurrence → hybrid retrieval combines vector + graph context. Agent runs ingested as Neo4j nodes with FOLLOWED_BY and tool_call_id edges for trace analysis.",
-        engineeringDecisions: [
-            {
-                title: "Hybrid graph + vector retrieval",
-                rationale:
-                    "Sequential and entity edges recover relationships that flat chunk retrieval misses in structured documents.",
-            },
-            {
-                title: "Separate trace graph for agents",
-                rationale:
-                    "Debugging multi-step agent workflows requires traversable conversation graphs, not unstructured log dumps.",
-            },
-        ],
+            "Pure vector RAG loses document structure and entity relationships, and multi-turn agent runs are hard to debug from flat logs. Modeling both as graphs improves retrieval grounding and makes any message traceable through the tool calls and decisions that produced it.",
         highlights: [
             "NetworkX + Neo4j dual graph model",
             "NER-based entity co-occurrence edges",
@@ -412,11 +339,17 @@ Forward / Backward Trace Queries`,
         order: 3,
         slug: "noc-troubleshooting",
         title: "NOC Link-Down Troubleshooting",
-        tagline: "12+ agent telecom network-operations workflow",
+        tagline: "A 15-agent telecom network-operations workflow, end to end",
         description:
-            "An agentic system for telecom BSO link-down cases. A set of specialized agents — intake, inventory, command synthesis, PE/CE diagnostics, parent mapping, customer FLT, last-mile verification, and closure — run across both wireless and wired flows, integrated with ServiceNow.",
+            "An agentic system for telecom BSO link-down cases. A set of specialized agents — intake, inventory, command synthesis, PE/CE diagnostics, parent mapping, customer FLT, last-mile verification, and closure — collaborate across both wireless and wired flows, with full ServiceNow case-lifecycle integration and a structured progress-event API for external orchestration.",
         problem:
-            "Link-down troubleshooting spans many systems and steps. This workflow encodes the runbook as collaborating agents that classify the case (MPLS / last-mile type) and drive it to resolution or escalation.",
+            "Link-down troubleshooting spans many systems, tools, and handoffs, and the runbook is long enough that no single engineer holds it all in their head. This workflow encodes the runbook as collaborating agents that classify the case (MPLS / last-mile type) and drive it to resolution or escalation — with a clear audit trail at every step.",
+        highlights: [
+            "15 collaborating agents across wired & wireless paths",
+            "LLM-based case classification",
+            "ServiceNow lifecycle integration",
+            "Real-time progress-event API",
+        ],
         features: [
             "12 shared agents + 3 wireless-specific agents (AP / SU paths)",
             "ServiceNow case lifecycle integration with state transitions",
@@ -430,14 +363,20 @@ Forward / Backward Trace Queries`,
         icon: "network",
     },
     {
-        order: 4,
+        order: 6,
         slug: "video-annotation",
         title: "AI Video Annotation Platform",
         tagline: "End-to-end video upload, processing & AI annotation pipeline",
         description:
-            "A full-stack video annotation platform with a React frontend and a FastAPI backend (migrated from Node.js). It handles video upload, validation, conversion, and an AWS Step Functions pipeline that produces transcripts, chapters, glossaries, and subtitles — with draft/publish versioning and multi-cloud storage.",
+            "A full-stack video annotation platform with a React frontend and a FastAPI backend (migrated from Node.js). It handles video upload, validation, and conversion, then drives an AWS Step Functions pipeline that produces transcripts, chapters, glossaries, and subtitles — with draft/publish versioning, multi-cloud storage, and real-time status tracking.",
         problem:
-            "Educational and studio video workflows need automated transcription, chaptering, and metadata generation at scale. This platform orchestrates upload, storage, and AI processing into a single versioned pipeline with real-time status tracking.",
+            "Educational and studio video workflows need automated transcription, chaptering, and metadata generation at scale — but the processing is slow, stateful, and easy to get wrong. This platform orchestrates upload, storage, and AI processing into a single versioned pipeline with real-time status tracking, so editors always know where a video is in the pipeline.",
+        highlights: [
+            "Durable async annotation pipeline",
+            "Draft / publish versioning",
+            "Multi-cloud storage (S3 / GCS)",
+            "Real-time processing status",
+        ],
         features: [
             "Video upload with format validation, resolution checks, and FFmpeg conversion",
             "AWS Step Functions pipeline for async annotation (transcript, chapters, VTT, LLM ops)",
@@ -460,41 +399,14 @@ Forward / Backward Trace Queries`,
         icon: "media",
     },
     {
-        order: 5,
+        order: 9,
         slug: "toolingu-ai",
         title: "ToolingU AI Assistance",
-        tagline: "Real-time chatbot | RAG | Unity integration",
+        tagline: "Real-time AI guidance for Unity virtual labs, grounded in RAG",
         description:
-            "A real-time AI chatbot integrated with Unity to assist users in virtual labs, enabling interactive guidance and a seamless hands-on experience. RAG is implemented with ChromaDB and LangChain to enhance LLM context awareness, generate accurate step-specific responses, improve retrieval efficiency, and maintain seamless interaction through optimized memory management.",
+            "A real-time AI assistant integrated with Unity to guide users through virtual labs. RAG is implemented with ChromaDB and LangChain over ingested procedure documents, so the model stays grounded in the actual task, generates accurate step-specific responses, and maintains seamless interaction through optimized session memory.",
         problem:
-            "Virtual lab training breaks down when learners get stuck mid-task and have no contextual help. Generic chatbots lack awareness of procedure documents and Unity interaction state. This system combines RAG over ingested training content with live collider-based progress tracking so every response is grounded and task-relevant.",
-        architecture:
-            "Unity simulation → Flask APIs (help_api, step_ques_hint) → ChromaDB RAG retrieval over PDF procedures → Llama 3.3 via NVIDIA NIM → MongoDB for session & progress state.",
-        architectureDiagram: `Unity Virtual Lab (collider events)
-     ↓
-Flask API (help_api / step_ques_hint)
-     ↓
-ChromaDB RAG (goal-filtered retrieval)
-     ↓
-Llama 3.3 70B (NVIDIA NIM)
-     ↓
-Step ID + Hints + Diagnostic Questions
-     ↓
-MongoDB (session history, help count)`,
-        aiPipeline:
-            "Procedure PDFs ingested with PyMuPDF4LLM → embedded into ChromaDB → Unity sends collider interactions → LLM identifies current step with retrieved procedure context → yes/no diagnostic flow with targeted hints.",
-        engineeringDecisions: [
-            {
-                title: "ChromaDB + LangChain RAG",
-                rationale:
-                    "Grounds every response in ingested procedure documents rather than relying on the LLM's parametric memory for safety-critical training steps.",
-            },
-            {
-                title: "Collider-based progress from Unity",
-                rationale:
-                    "Physical interaction state gives the model concrete signals about where the learner is in the lab — not just free-text chat.",
-            },
-        ],
+            "Virtual lab training breaks down when learners get stuck mid-task with no contextual help. Generic chatbots lack awareness of the procedure documents and the learner's live interaction state. This system combines RAG over ingested training content with collider-based progress tracking from Unity, so every response is grounded and task-relevant.",
         highlights: [
             "Unity-integrated real-time guidance",
             "Goal-filtered vector retrieval",
@@ -525,41 +437,14 @@ MongoDB (session history, help count)`,
         icon: "workflow",
     },
     {
-        order: 6,
+        order: 4,
         slug: "code-review-ingestion",
         title: "Code Ingestion & Review Agent",
         tagline: "AST-based repo indexing + SonarQube-driven AI code fixing",
         description:
-            "A two-part developer tooling system: a code ingestion pipeline that clones repos, parses source with AST, chunks at the element level, and indexes into Weaviate — and a code review agent that reads SonarQube findings and uses an MCP-backed LLM agent to validate, fix, and commit changes via GitLab in chunked passes.",
+            "A two-part developer tooling system. First, a code ingestion pipeline that clones repos, parses source with AST, chunks at the element level, and indexes into Weaviate for semantic search. Second, a code review agent that reads SonarQube findings and uses an MCP-backed LLM agent to validate, fix, and commit changes via GitLab in chunked passes.",
         problem:
-            "Developers need both semantic code search over entire repositories and automated remediation of static-analysis findings. Ingestion builds the knowledge base; the review agent closes the loop from SonarQube issue to applied fix.",
-        architectureDiagram: `Git Repo Clone
-     ↓
-AST Parse (multi-language)
-     ↓
-Element Chunking + LLM Summaries
-     ↓
-Weaviate Vector Index
-
-SonarQube Issues
-     ↓
-MCP LLM Agent (chunked passes)
-     ↓
-Validate → Fix → GitLab Commit`,
-        aiPipeline:
-            "Repos parsed at AST element level → summaries embedded in Weaviate for semantic search. SonarQube findings fetched in chunks → MCP agent validates each issue against current code → applies fixes and commits via GitLab API.",
-        engineeringDecisions: [
-            {
-                title: "AST element-level chunking",
-                rationale:
-                    "Function/class boundaries produce semantically coherent chunks for both search and fix context — better than arbitrary line splits.",
-            },
-            {
-                title: "Chunked SonarQube remediation",
-                rationale:
-                    "Large issue lists exceed context limits; chunked passes with cross-chunk validation avoid duplicate fixes and missed issues.",
-            },
-        ],
+            "Developers need both semantic code search over entire repositories and automated remediation of static-analysis findings — and the two are tightly coupled. Ingestion builds the knowledge base the agent reasons over; the review agent closes the loop from a SonarQube issue to an applied, committed fix.",
         highlights: [
             "Multi-language AST ingestion",
             "Weaviate semantic code search",
@@ -589,70 +474,21 @@ Validate → Fix → GitLab Commit`,
         icon: "code",
     },
     {
-        order: 7,
-
-        slug: "model-deployments",
-        title: "Self-Hosted LLM Inference Gateway",
-        tagline: "Unified API over vLLM, Ollama & NVIDIA NIM",
-        description:
-            "A production inference gateway with a FastAPI backend and React chat UI that routes requests to multiple self-hosted backends — vLLM for high-throughput parallel inference, Ollama for multimodal and casual use, and NVIDIA NIM for enterprise-grade Llama deployments — all behind a single OpenAI-compatible API surface.",
-        problem:
-            "Different workloads need different inference engines: vLLM for batch throughput, Ollama for easy model management, NIM for managed enterprise GPUs. This gateway abstracts backend differences so applications swap engines via config, not code.",
-        architecture:
-            "React chat UI → FastAPI gateway → /api/vllm/* or /api/ollama/* routes → backend-specific adapters (OpenAI SDK for vLLM, Ollama async client) → SSE streaming back to client.",
-        architectureDiagram: `Client (React)
-     ↓
-FastAPI Gateway
-     ├─→ /api/ollama/*  → Ollama (multimodal, local)
-     └─→ /api/vllm/*    → vLLM (throughput, batching)
-              ↓
-     OpenAI-compatible /v1/chat/completions
-              ↓
-     SSE / JSON Response`,
-        aiPipeline:
-            "Unified chat schema across backends → gateway selects engine via config → vLLM uses continuous batching for throughput → Ollama handles casual/multimodal workloads → reasoning mode forwarded to vLLM when enabled.",
-        engineeringDecisions: [
-            {
-                title: "Single gateway, multiple inference backends",
-                rationale:
-                    "Applications (Lucius, ToolingU, etc.) swap vLLM vs Ollama via env config — no rewrite of client integration code.",
-            },
-            {
-                title: "vLLM for throughput, Ollama for flexibility",
-                rationale:
-                    "Different workloads need different engines; abstracting both behind OpenAI-compatible APIs keeps the ops model simple.",
-            },
-        ],
-        highlights: [
-            "Backend-agnostic OpenAI API surface",
-            "SSE streaming + sync endpoints",
-            "Parallel request semaphore for Ollama",
-            "Reasoning/thinking mode proxy",
-        ],
-        features: [
-            "Dual-backend FastAPI gateway — /api/vllm/* and /api/ollama/* with shared chat schema",
-            "Streaming SSE and sync JSON chat endpoints with reasoning/thinking mode support",
-            "vLLM continuous batching with OpenAI-compatible /v1/chat/completions proxy",
-            "Ollama model pull with SSE progress, GPU status, and parallel request semaphore",
-            "React frontend with backend switcher, model selector, and load-test panel",
-            "OpenAI-compatible routing used across Lucius AI, ToolingU, and other projects",
-        ],
-        stack: ["FastAPI", "vLLM", "Ollama", "NVIDIA NIM", "React", "OpenAI SDK", "SSE Streaming"],
-        category: "ML Infrastructure",
-        featured: true,
-        accent: "from-teal-400/25 via-accent-500/10 to-transparent",
-        icon: "server",
-    },
-    {
-        order: 8,
+        order: 2,
 
         slug: "media-library",
         title: "AI Media Library",
-        tagline: "Multimodal media ingestion, search & progress tracking",
+        tagline: "Multimodal media ingestion, semantic search & live progress tracking",
         description:
-            "A full-stack media library that ingests images and video, extracts metadata (including HOG-based and MiniCPM vision models), stores it in a vector DB, and supports search with a live import progress tracker.",
+            "A full-stack media library that ingests images and video, extracts rich metadata using HOG-based and MiniCPM vision models, stores it in a vector database, and supports semantic search — with a live import progress tracker so users always see how far along a large batch is.",
         problem:
-            "Large media collections are hard to search semantically. This system builds rich, searchable metadata and gives users real-time visibility into import progress.",
+            "Large media collections are hard to search semantically — filename and tag-based search misses what's actually in the content. This system builds rich, searchable metadata from the media itself and gives users real-time visibility into import progress for large batches.",
+        highlights: [
+            "HOG + MiniCPM content understanding",
+            "Vector-DB semantic search",
+            "Live import progress tracking",
+            "Dockerized, GCP-backed backend",
+        ],
         features: [
             "Image & video ingestion with metadata extraction",
             "HOG and MiniCPM vision models for content understanding",
@@ -666,44 +502,15 @@ FastAPI Gateway
         icon: "media",
     },
     {
-        order: 9,
+        order: 8,
 
         slug: "yolo-realtime-vision",
         title: "Machinery Detection for Industrial Assistance",
-        tagline: "Edge AI | Custom YOLO | Real-time vision chatbot",
+        tagline: "Edge AI | Custom YOLO | Real-time vision & voice chatbot",
         description:
-            "An edge-AI system for industrial machinery assistance — a Gemini Live-style real-time vision and voice chatbot paired with a custom YOLO model trained on industrial components. A rule-based monitoring framework tracks user actions in real time, ensuring correct handling of machinery, while the model is optimized for edge deployment to achieve low latency and high efficiency during live processing.",
+            "An edge-AI system for industrial machinery assistance — a Gemini Live-style real-time vision and voice chatbot paired with a custom YOLO model trained on industrial components. A rule-based monitoring framework tracks user actions in real time to ensure correct handling of machinery, while the model is optimized for edge deployment to deliver low-latency, high-efficiency live processing.",
         problem:
-            "Industrial training and maintenance require verifying that operators handle the right components in the right order, in real time. Cloud-only vision is too slow for live guidance. This system runs a custom-trained YOLO model on-device for component detection, couples it with a WebRTC voice loop, and enforces step correctness through a rule-based action monitor backed by MongoDB task state.",
-        architecture:
-            "React Native (YOLO on-device) → FastRTC WebRTC audio → Whisper STT → Llama streaming → TTS playback | Socket.IO + MongoDB for step validation & rule-based action monitoring.",
-        architectureDiagram: `Camera (React Native)
-     ↓
-YOLO Edge Detection (custom dataset)
-     ↓
-Rule-Based Step Monitor
-     ↓
-FastRTC WebRTC Audio ←→ Whisper STT
-     ↓
-Streaming LLM + Vision Backend
-     ↓
-Edge TTS / Cartesia → User
-     ↓
-MongoDB Task State (Socket.IO)`,
-        aiPipeline:
-            "Live frames processed on-device by custom YOLO → component detections validated against MongoDB step outline → voice queries transcribed via Whisper → LLM responds with task-aware context → spoken via streaming TTS.",
-        engineeringDecisions: [
-            {
-                title: "On-device YOLO vs cloud vision",
-                rationale:
-                    "Industrial component identification needs low latency; edge inference avoids sending every frame to a remote API.",
-            },
-            {
-                title: "Rule-based monitor + LLM guidance",
-                rationale:
-                    "Deterministic step validation catches incorrect actions; the LLM layer handles natural-language guidance without replacing hard safety checks.",
-            },
-        ],
+            "Industrial training and maintenance require verifying that operators handle the right components in the right order — in real time. Cloud-only vision is too slow for live guidance. This system runs a custom-trained YOLO model on-device for component detection, couples it with a WebRTC voice loop, and enforces step correctness through a rule-based action monitor backed by MongoDB task state.",
         highlights: [
             "Custom-trained YOLO (20+ component classes)",
             "Edge-optimized mobile inference",
@@ -742,7 +549,7 @@ MongoDB Task State (Socket.IO)`,
         ],
     },
     {
-        order: 10,
+        order: 7,
 
         slug: "scout-ai",
         title: "ScoutAI — Real-Time Voice Companion",
@@ -751,21 +558,6 @@ MongoDB Task State (Socket.IO)`,
             'A real-time voice companion for children — "Scout" — built on the OpenAI Realtime API with a React frontend and a Python Socket.IO backend. Users speak naturally and Scout responds with streamed audio, switching between casual chat, interactive storytelling, character role-play, and homework help via tool/function calling, with full session history and persona persistence in Firestore.',
         problem:
             "Child-facing voice AI needs to feel natural, safe, and adaptive — not a single static chatbot. Scout routes live speech through OpenAI Realtime with server-side VAD, dynamically swaps system prompts and tools per mode (story, role-play, homework), and remembers characters, personas, and past conversations across sessions.",
-        architectureDiagram: `React Client (mic/speaker)
-     ↓
-Socket.IO Backend
-     ↓
-OpenAI Realtime WebSocket (PCM audio)
-     ↓
-Function Calling (mode router)
-     ├─ Storytelling
-     ├─ Role-play
-     ├─ Homework
-     └─ Casual chat
-     ↓
-Firestore (personas, history)`,
-        aiPipeline:
-            "User speech streamed as PCM → OpenAI Realtime with server VAD → mode selected via function calling → system prompt and tools swapped per mode → audio response streamed back → session and persona state persisted in Firestore.",
         highlights: [
             "OpenAI Realtime bidirectional audio",
             "Multi-mode function calling",
@@ -796,13 +588,19 @@ Firestore (personas, history)`,
     },
     {
         slug: "context-manager",
-        order: 11,
+        order: 10,
         title: "Context Manager Agent",
-        tagline: "Token-aware context orchestration for agents",
+        tagline: "Token-aware context orchestration for long-running agents",
         description:
-            "An agent that manages LLM context intelligently — query analysis, planning/decomposition, an execution loop, and result aggregation — with smart summarization, token budgeting, relevance filtering, and hierarchical compression.",
+            "An agent that manages LLM context intelligently — query analysis, planning and decomposition, an execution loop, and result aggregation — with smart summarization, token budgeting, relevance filtering, and hierarchical compression so long-running agents stay focused and within budget.",
         problem:
-            "Long agent sessions blow past context limits. This system compresses and budgets context so agents stay focused and within token budgets.",
+            "Long agent sessions blow past context limits, and naive truncation silently drops the information the agent actually needs. This system compresses and budgets context intelligently so agents stay focused, relevant, and within token budgets across extended runs.",
+        highlights: [
+            "Token-aware budgeting",
+            "Hierarchical compression",
+            "Relevance filtering",
+            "LangGraph subgraph orchestration",
+        ],
         features: [
             "Query analysis / intent detection and planning subgraphs",
             "Smart summarization instead of hard truncation",
@@ -843,18 +641,18 @@ export const experience: ExperienceItem[] = [
                 title: "Software Developer | AI Engineer",
                 period: "Jul 2025 – Present",
                 points: [
-                    "Building retrieval-augmented and graph-augmented generation pipelines",
-                    "Designing long-context reasoning (RLM) to beat prompt-length limits",
-                    "LangGraph state machines with routing, tool use & checkpointing",
-                    "FastAPI services with async I/O, JWT auth & encrypted secrets",
+                    "Building retrieval-augmented and graph-augmented generation (RAG / GraphRAG) pipelines for production use",
+                    "Designing long-context reasoning (RLM) engines to work around prompt-length limits",
+                    "Orchestrating multi-agent workflows with LangGraph — routing, tool use via MCP, and checkpointing",
+                    "Shipping FastAPI services with async I/O, JWT auth, and encrypted secrets",
                 ],
             },
             {
                 title: "Engineer Trainee",
                 period: "Jul 2024 – Jul 2025",
                 points: [
-                    "Artificial Intelligence (AI), Deep Learning and 5+ skills",
-                    "Foundational work across ML pipelines, model training & deployment",
+                    "Trained across AI, deep learning, and core software engineering fundamentals",
+                    "Built foundational experience across ML pipelines, model training, and deployment",
                 ],
             },
         ],
@@ -865,7 +663,7 @@ export const experience: ExperienceItem[] = [
 //  Stats — derived from the actual project set (no invented metrics)
 // ---------------------------------------------------------------------------
 export const stats = [
-    { value: "11", label: "AI/ML projects built" },
+    { value: "10", label: "AI/ML projects built" },
     { value: "4", label: "Cloud & AI certifications" },
     { value: "15+", label: "Agents designed" },
     { value: "Full-stack", label: "Python → React" },
@@ -894,6 +692,8 @@ export const certifications: Certification[] = [
         issuer: "Amazon Web Services",
         icon: "sparkles",
         date: "2026",
+        level: "Foundational",
+        credential: "AWS-AIF",
         skills: ["GenAI", "Bedrock", "ML Foundations", "Prompting"],
     },
     {
@@ -901,6 +701,8 @@ export const certifications: Certification[] = [
         issuer: "Amazon Web Services",
         icon: "cloud",
         date: "2024",
+        level: "Associate",
+        credential: "DVA-C02",
         skills: ["AWS", "Serverless", "Lambda", "CI/CD"],
     },
     {
@@ -908,6 +710,7 @@ export const certifications: Certification[] = [
         issuer: "Google Cloud",
         icon: "brain",
         date: "2026",
+        level: "Professional",
         skills: ["Vertex AI", "AI Agents", "Gemini", "RAG", "MLOps"],
     },
     {
@@ -915,6 +718,8 @@ export const certifications: Certification[] = [
         issuer: "Red Hat",
         icon: "server",
         date: "2024",
+        level: "Associate",
+        credential: "RHCSA · EX280",
         skills: ["Linux", "RHEL", "System Administration", "Shell"],
     },
 ];

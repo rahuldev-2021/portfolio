@@ -11,7 +11,7 @@ export function Hero() {
   const reduce = useReducedMotion();
 
   const socials = [
-    { label: "Email", href: `mailto:${profile.email}`, icon: IconMail },
+    { label: "Email", href: `https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}`, icon: IconMail, external: true },
     {
       label: "LinkedIn",
       href: profile.linkedin || "#contact",
@@ -32,19 +32,6 @@ export function Hero() {
         <div className="grid w-full items-center gap-10 lg:grid-cols-2 lg:gap-12">
           {/* Left */}
           <div>
-            <motion.div
-              initial={reduce ? false : { opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="status-badge"
-            >
-              <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--teal)] opacity-60" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-[var(--teal)]" />
-              </span>
-              {profile.availability}
-            </motion.div>
-
             <motion.h1
               initial={reduce ? false : { opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
@@ -72,7 +59,12 @@ export function Hero() {
               className="mt-5 max-w-lg text-sm leading-relaxed sm:text-[15px]"
               style={{ color: "var(--fg-muted)" }}
             >
-              {profile.heroIntro}
+              {profile.heroIntro.map((line, i) => (
+                <span key={i}>
+                  {line}
+                  {i < profile.heroIntro.length - 1 && <br />}
+                </span>
+              ))}
             </motion.p>
 
             <motion.div

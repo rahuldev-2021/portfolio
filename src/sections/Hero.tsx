@@ -30,7 +30,7 @@ export function Hero() {
       <div className="container-x flex min-h-[calc(100svh-4rem)] items-center py-8 lg:py-10">
         <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
           {/* Eyebrow */}
-          <motion.span
+          {/* <motion.span
             initial={reduce ? false : { opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.02 }}
@@ -38,7 +38,7 @@ export function Hero() {
             style={{ color: "var(--accent-bright)" }}
           >
             AI Engineer
-          </motion.span>
+          </motion.span> */}
 
           {/* Name */}
           <motion.h1
